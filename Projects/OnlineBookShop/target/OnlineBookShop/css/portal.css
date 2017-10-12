@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	background-color: #b3ecff;
+}
+
+div.box table, th, tr, td {
+	border: 2px solid blue;
+	padding: 5px;
+}
+
+.toppane a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.leftpane {
+	border-right: 1px solid black;
+	margin-top: 40px;
+	margin-left: 0px;
+	width: 25%;
+	height: 700px;
+	float: left;
+	background-color:;
+	border-collapse: collapse;
+	width: 25%;
+	margin-top: 40px;
+}
+
+.middlepane {
+	border-right: 1px solid black;
+	margin-top: 40px;
+	width: 50%;
+	height: 700px;
+	float: left;
+	background-color:;
+	border-collapse: collapse;
+}
+
+.rightpane {
+	border-right: 1px solid black;
+	margin-top: 40px;
+	width: 24%;
+	height: 700px;
+	position: relative;
+	float: right;
+	background-color:;
+	border-collapse: collapse;
+}
+
+.toppane {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	border-collapse: collapse;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 5px 11px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+	float: left;
+	height: 35px;
+}
+
+.labels {
+	margin-top: 20%;
+}
+
+.labels #tree {
+	background-color: white;
+}
+
+ul.checktree-root, ul#tree ul {
+	list-style: none;
+}
+
+ul.checktree-root label {
+	font-weight: normal;
+	position: relative;
+}
+
+ul.checktree-root label input {
+	position: relative;
+	top: 2px;
+	left: -5px;
+}

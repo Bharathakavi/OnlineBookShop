@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Request Book</title>
+<link rel="stylesheet" type="text/css" href="css/addbook.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia'
+	rel='stylesheet'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/display.js"></script>
+<script src="js/logout.js"></script>
+</head>
+<body>
+	<header class="nav">
+		<div>
+			<ul>
+				<li><a href="#home"><i class="fa fa-shopping-bag"
+						aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;BookShow</a></li>
+				<li><a href="#aboutus">About Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li style="float: right"><a id="out">LogOut</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<h2 style="text-align: center;">Enter The Request Book Details</h2>
+
+	<form action=rest/book/requestBook method="post"
+		style="border: 1px solid #ccc;">
+		<div class="container">
+			<label><b>Name</b></label> <input type="text"
+				placeholder="Enter Book Name" name="name" required> 
+			<label><b>Author</b></label>
+			<input type="text" placeholder="Enter the Author Name" name="aname"	required> 
+			<div class="clearfix">
+				<button type="submit" class="signupbtn">Request Book</button>
+			</div>
+		</div>
+	</form>
+
+
+</body>
+</html>

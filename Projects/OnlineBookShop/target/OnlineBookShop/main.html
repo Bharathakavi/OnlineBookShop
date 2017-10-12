@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Users</title>
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia'
+	rel='stylesheet'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/display.js"></script>
+<script src="js/logout.js"></script>
+</head>
+<body>
+	<header class="nav">
+		<div>
+			<ul>
+				<li><a href="#home"><i class="fa fa-shopping-bag"
+						aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;BookShow</a></li>
+				<li><a href="#aboutus">About Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li style="float: right"><a id="out">LogOut</a></li>
+				<li style="float: right"><a href="requestbook.html">Request
+						Book</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="options">
+		<ul style="background-color: #2db9b9;">
+			<li><a href="#fiction">Fiction</a></li>
+			<li><a href="#science">Science</a></li>
+			<li><a href="#computers">Computers</a></li>
+			<li><a href="#history">History</a></li>
+		</ul>
+	</div>
+
+	<div id="fiction" style="margin: 10px;">
+		<h4>If Book is not Available in the List. Please Request Book.</h4>
+		<h2>Fictional Books</h2>
+		<div class="gallery">
+			<a onclick="rate('The Book Thief',' Markus Zusak',100)" href="#"> <img src="images/book_thief.jpg"
+				alt="book_thief image" width="600" height="400">
+			</a>
+			<div class="desc">
+				The Book Thief<br>Author: Markus Zusak
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a onclick="rate('Listen, Slowly...',' Queen Mary',100)" href="#"> <img src="images/listen.jpg"
+				alt="image of listen book" width="600" height="400">
+			</a>
+			<div class="desc">
+				Listen, Slowly..<br>Author: Queen Mary
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a onclick="rate('Boy at the End of World',' Greg Wan Eukot',350)" href="#"> <img src="images/the_boy.jpg"
+				alt="image of boy book" width="600" height="400">
+			</a>
+			<div class="desc">
+				Boy At the End of World<br>Author: Greg Wan Eukot
+			</div>
+		</div>
+		<div class="gallery">
+			<a onclick="rate('The Help',' Wan Steve',200)" href="#"> <img src="images/help.jpg"
+				alt="image of help book" width="600" height="400">
+			</a>
+			<div class="desc">
+				The Help<br>Author: Wan Steve
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="science" style="margin-top: 20%;">
+		<h2>Science Books</h2>
+		<div class="gallery">
+			<a onclick="rate('The Life Science','Mohan K Kumar',100)" href="#"> <img
+				src="images/lifeScience.jpg" alt="life science image" width="600"
+				height="400">
+			</a>
+			<div class="desc">
+				The Life Science<br>Author: Mohan K Kumar
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a onclick="rate('Chemistry',' Zumdhal',100)" href="#"> <img src="images/chemistry.jpg"
+				alt="image of chemistry book" width="600" height="400">
+			</a>
+			<div class="desc">
+				Chemistry<br>Author: Zumdhal
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a onclick="rate('The Psychology of Institute',' Servers',100)" href="#"> <img src="images/psych.jpg"
+				alt="image of psychology book" width="600" height="400">
+			</a>
+			<div class="desc">
+				The Psychology of Institute<br>Author: Servers
+			</div>
+		</div>
+		<div class="gallery">
+			<a onclick="rate('The Astronomy',' Jogesh Babu',150)" href="#"> <img src="images/atronomy.jpg"
+				alt="image of astronomy book" width="600" height="400">
+			</a>
+			<div class="desc">
+				The Astronomy<br>Author: Jogesh Babu
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="computers" style="margin-top: 20%;">
+		<h2>Computer Books</h2>
+		<div class="gallery">
+			<a onclick="rate('C Programming',' Ashok Kamthane',300)" href="#"> <img src="images/cbook.jpg"
+				alt="c book image" width="600" height="400">
+			</a>
+			<div class="desc">
+				C Programming<br>Author: Ashok Kamthane
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a onclick="rate('The Computer',' Clinton',400)" href="#"> <img src="images/computer1.jpg"
+				alt="image of computer book" width="600" height="400">
+			</a>
+			<div class="desc">
+				The Computer<br>Author: Clinton
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a onclick="rate('JAVA',' Dr.K.Karuna',200)" href="#"> <img src="images/java.jpg"
+				alt="image of java book" width="600" height="400">
+			</a>
+			<div class="desc">
+				JAVA<br>Author: Dr. K. Karuna
+			</div>
+		</div>
+		<div class="gallery">
+			<a onclick="rate('The Computer Vision',' Prof.S.Kumaresan',300)" href="#"> <img src="images/vision.jpg"
+				alt="image of vision book" width="600" height="400">
+			</a>
+			<div class="desc">
+				The Computer Vision<br>Author: Prof.S. Kumaresan
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="history" style="margin-top: 20%;">
+		<h2>History Books</h2>
+		<div class="gallery">
+			<a onclick="rate('The Indian History',' Siva Subramani',600)" href="#"> <img src="images/ancient.jpg"
+				alt="ancient image" width="600" height="400">
+			</a>
+			<div class="desc">
+				The Indian History<br>Author: Siva Subramani
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a onclick="rate('The IAS Mains',' Steve Hook',300)" href="#"> <img src="images/iasbook.jpg"
+				alt="image of ias book" width="600" height="400">
+			</a>
+			<div class="desc">
+				The IAS Mains<br>Author: Steve Hook
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a onclick="rate('The Indian History',' Johansan',500)" href="#"> <img src="images/indian.jpg"
+				alt="image ofindian book" width="600" height="400">
+			</a>
+			<div class="desc">
+				The Indian History<br>Author: Johanson
+			</div>
+		</div>
+		<div class="gallery">
+			<a onclick="rate('The world History',' Wan Hook',400)" href="#"> <img src="images/world.jpg"
+				alt="image of world book" width="600" height="400">
+			</a>
+			<div class="desc">
+				The World History<br>Author: Wan Hook
+			</div>
+		</div>
+	</div>
+	<div id="aboutus" style="margin-top: 40%;">
+		<h2>ABOUT US</h2>
+		<p style="text-align: center; padding: 40px; color: purple;">Mega
+			World Book Shop is India's largest mobile payments and commerce
+			platform. It started with online mobile recharge and bill payments
+			and has an online marketplace today. In a short span of time we have
+			scaled to over 220 Mn registered users. Mega World Book Shop is the
+			consumer brand of India's leading mobile internet company One97
+			Communications. One97 investors include Ant Financial (AliPay), SAIF
+			Partners, Mediatek, Sapphire Venture and Silicon Valley Bank. We
+			strive to maintain an open culture where everyone is a hands-on
+			contributor and feels comfortable sharing ideas and opinions. Our
+			team spends hours designing each new feature and obsesses about the
+			smallest of details.</p>
+	</div>
+	<div id="contact">
+		<h2>Contact Us</h2>
+		<div class="container">
+			<form action="#">
+				<label for="fname">First Name</label> <input type="text" id="fname"
+					name="firstname" placeholder="Your name.."> <label
+					for="mail">Mail</label> <input type="text" id="lname"
+					name="lastname" placeholder="Your last name.."> <label
+					for="subject">Subject</label>
+				<textarea id="subject" name="subject"
+					placeholder="Write something.." style="height: 200px"></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>

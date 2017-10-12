@@ -1,0 +1,8 @@
+com\DAO\Document.class
+com\controller\Controller.class
+com\DAO\DocumentDAO.class
+com\DAO\UserDetails.class
+com\DAO\RequestBook.class
+com\DAO\Book.class
+com\DAO\BookDAO.class
+com\DAO\SessionUtil.class

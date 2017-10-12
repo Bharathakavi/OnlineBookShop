@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book</title>
+<link rel="stylesheet" type="text/css" href="css/book.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia'
+	rel='stylesheet'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/display.js"></script>
+<script src="js/logout.js"></script>
+<script src="js/available.js"></Script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
+<script id="available-template" type="text/x-handlebars-template">
+		{{#each Book}}
+  		<div class="box">
+		<img src="images/book_thief.jpg" alt="Smiley face">	
+		<p>Book Name: {{name}}.<br>Author: {{author}}<br> Price: {{price}}.</p></div>
+		{{/each}}
+	</script>
+
+</head>
+<body>
+	<header class="nav">
+		<div>
+			<ul>
+				<li><a href="#home"><i class="fa fa-shopping-bag"
+						aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;BookShow</a></li>
+				<li><a href="#aboutus">About Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li style="float: right"><a id="out">LogOut</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="choice"
+		style="border: 1px; border-radius: 10px; margin-left: 37%; margin-top: 10%; margin-right: 30%;">
+		<a href="addbook.html" class="option"> Add Book</a><br> 
+		<a	id="avail" href="#" class="option">Available Books</a>
+	</div>
+	<!--Your new content will be displayed in here-->
+	<h2 style="text-align: center;">Your Available Books Are Here</h2>
+	<div class="content-placeholder"></div>
+	<!-- footer>
+	 @Copyright Bookshow.com
+	</footer>
+	 --> 
+</body>
+</html>

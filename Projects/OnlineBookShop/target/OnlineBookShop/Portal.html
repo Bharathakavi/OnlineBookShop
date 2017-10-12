@@ -1,0 +1,142 @@
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PORTAL</title>
+<link rel="stylesheet" type="text/css" href="css/portal.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="#"></script>
+<script src="js/checktree.js"></script>
+<script src="js/labelcount.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
+<script id="file-template" type="text/x-handlebars-template">
+
+<div class="box">
+<table style="width:100%;">
+  <tr>
+    <th>ID</th>
+    <th>FILE NAME</th> 
+    <th>LABEL</th>
+	<th>PARENT DOC_ID</th>
+  </tr>
+{{#each Files}}
+  <tr>
+    <td>{{id}}</td>
+    <td>{{filename}}</td>
+    <td>{{label}}</td>
+	<td>{{parentId}}</td>
+  </tr>
+{{/each}}
+</table>
+</div>
+</script>
+<script id="label-template" type="text/x-handlebars-template">
+			<ul style="	list-style: none;">
+				<li><label> <input type="checkbox" /> All Labels({{all}})
+				</label></li>
+				<li><label> <input type="checkbox" /> Non Labeled({{nonlabeled}})
+				</label></li>
+				<li><label> <input type="checkbox" /> Privileged({{priviledged}})
+				</label></li>
+			</ul>
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="toppane">
+			<a href="#">Review Portal</a> <a href="#" style="float: right;"><i
+				class="fa fa-question-circle" aria-hidden="true"></i></a> <a href="#"
+				style="float: right;"><i class="fa fa-bell" aria-hidden="true"></i></a>
+			<a href="#" style="float: right;"><i class="fa fa-bars"
+				aria-hidden="true"></i></a> <a href="#" style="float: right;"><i
+				class="fa fa-home" aria-hidden="true"></i></a> <a href="#"
+				style="float: right;">Bharathakavi D</a>
+		</div>
+		<div class="leftpane">
+			<div style="padding: 10px; background-color: #f0f0f5; height: 30px;">
+				<i class="fa fa-filter" aria-hidden="true"></i> Labels
+			</div>
+			<div class="labelcount">
+		 <!-- 	 	<ul style="	list-style: none;">
+				<li><label> <input type="checkbox" /><a> All Labels</a>
+				</label></li>
+				<li><label> <input type="checkbox" /><a> Non Labeled</a>
+				</label></li>
+				<li><label> <input type="checkbox" /> Privileged
+				</label></li>
+				</ul>
+			 -->
+			</div>
+		</div>
+		<div class="middlepane">
+			<!-- <a	id="files" href="#" class="option">Files</a>--->
+			<div class="placeholder"></div>
+		</div>
+		<div class="rightpane">
+			<div style="padding: 10px; background-color: #f0f0f5; height: 30px;">
+				<i class="fa fa-check-square" aria-hidden="true"></i> Coding Pane
+			</div>
+			<div style="background-color: white;">
+				<input type="button" class="button" value="Save"> <input
+					type="button" class="button" value="Save & Next">
+			</div>
+			<div class="labels">
+				<ul id="tree" style="list-style: none;">
+					<li><input type="radio" />Responsive</li>
+					<li><label> <input type="checkbox" /> Level 1 - 1
+					</label></li>
+					<li><label> <input type="checkbox" /> Level 1 - 2
+					</label>
+						<ul>
+							<li><label> <input type="checkbox" /> Level 2 - 1
+							</label>
+								<ul>
+									<li><label> <input type="checkbox" /> Level 3 - 1
+									</label></li>
+									<li><label> <input type="checkbox" /> Level 3 - 2
+									</label></li>
+								</ul></li>
+						</ul> <li><label> <input type="checkbox" /> Level 1 - 3
+					</label></li>
+					<li><label> <input type="checkbox" /> Level 1 - 4
+					</label></li>
+				</ul>
+				<script>
+					$('#tree').checktree();
+				</script>
+						<ul id="tree" style="list-style: none;">
+					<li><input type="radio" />Privileged</li>
+					<li><label> <input type="checkbox" /> Level 1 - 1
+					</label></li>
+					<li><label> <input type="checkbox" /> Level 1 - 2
+					</label>
+						<ul>
+							<li><label> <input type="checkbox" /> Level 2 - 1
+							</label>
+								<ul>
+									<li><label> <input type="checkbox" /> Level 3 - 1
+									</label></li>
+									<li><label> <input type="checkbox" /> Level 3 - 2
+									</label></li>
+								</ul></li>
+						</ul>
+					
+							<li><label> <input type="checkbox" /> Level 1 - 3
+					</label></li>
+					<li><label> <input type="checkbox" /> Level 1 - 4
+					</label></li>
+				</ul>
+				<script>
+					$('#tree').checktree();
+				</script>
+			
+					</div>
+		</div>
+	</div>
+</body>
+</html>

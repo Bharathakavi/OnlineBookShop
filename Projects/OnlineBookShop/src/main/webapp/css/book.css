@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	background-color: #b3e6ff;
+	padding: 0;
+	font-family: 'Sofia';
+	font-size: 16px;
+	background-image: url("../images/books.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div.name {
+	display: block;
+	color: red;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #b3b3ff;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #aa80ff;
+}
+
+li {
+	float: left;
+	display: inline;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not (.active ){
+background-color:#6666ff;
+}
+.active {
+	background-color: #6666ff;
+}
+
+.option {
+	display: block;
+	border-style: solid;
+	color: purple;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #b3d9ff;
+}
+
+div.box {
+	margin-top: 10px;
+	margin-left: 10%;
+	border: 1px solid #ccc;
+	float: left;
+	width: 150px;
+	background-color: #aa80ff;
+}
+
+div.box img {
+	width: 100%;
+	height: auto;
+}
+
+div.box p {
+	padding: 3px;
+	text-align: center;
+}
+
+div.content-placeholder {
+	margin-top: 5%;
+}
+
+footer{
+	border:1px solid red;
+	background-color:#b3b3ff;
+	height:3%;
+	width:100%;
+	left:0px;
+	margin-bottom:0px;
+}

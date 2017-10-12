@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	background-color: #b3e6ff;
+	padding: 0;
+	font-family: 'Sofia';
+	font-size: 16px;
+	background-image: url("../images/books.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div.name {
+	display: block;
+	color: red;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #b3b3ff;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #aa80ff;
+}
+
+li {
+	float: left;
+	display: inline;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active)
+{
+background-color: #6666ff;
+
+}
+.active {
+	background-color: #6666ff;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 30%;
+}
+
+/* Add padding to container elements */
+.container {
+    margin-top:3%;
+    margin-left:30%;
+    margin-right:30%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+div.box{	
+	margin-top: 10px;
+	margin-left: 10%;
+	border: 1px solid #ccc;
+	float: left;
+	width: 150px;
+}
+div.box img {
+	width: 100%;
+	height: auto;
+}
+
+div.box p {
+	padding: 10px;
+	text-align: center;
+}
+
+div.content-placeholder{
+	
+}
